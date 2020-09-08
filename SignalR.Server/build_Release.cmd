@@ -1,0 +1,1 @@
+dotnet build -c Release -p:Version=0.0.0.1
