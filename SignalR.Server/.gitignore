@@ -1,4 +1,5 @@
 .vscode
+.vs
+*.old
 bin
 obj
-*.old

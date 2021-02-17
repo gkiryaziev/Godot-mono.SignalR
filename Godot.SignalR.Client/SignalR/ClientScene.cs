@@ -19,6 +19,10 @@ public class ClientScene : Node2D
 
 	public override void _Ready()
 	{
+		// Hack for being able to connect to the server using the https protocol.
+        System.Net.ServicePointManager.ServerCertificateValidationCallback =
+			new System.Net.Security.RemoteCertificateValidationCallback(delegate { return true; });
+
 		txtAddress = GetNode<LineEdit>("txtAddress");
 		txtName = GetNode<LineEdit>("txtName");
 		txtMessage = GetNode<LineEdit>("txtMessage");

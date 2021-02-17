@@ -1,5 +1,7 @@
 .import
 .mono
+.vscode
+.vs
 *.old
 mono
 Win
